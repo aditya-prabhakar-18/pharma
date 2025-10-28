@@ -46,7 +46,6 @@ Originally developed as a CBSE Class XII Computer Science project.
 
 
 ## 🗂️ Project Structure
-
 pharmacy-management-system/
 ├── src/
 │   ├── main.py               # main application code
@@ -66,8 +65,6 @@ pharmacy-management-system/
 ├── requirements.txt
 ├── LICENSE
 └── .gitignore
-
-
 
 
 ## 📸 Screenshots
