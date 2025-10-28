@@ -93,10 +93,3 @@ pharmacy-management-system/
 * TutorialsPoint Python references
 * StackOverflow community for debugging assistance
 
-
----
-
-That’s your full README. Save it in the root folder (`pharmacy-management-system/README.md`) before committing.  
-
-You’ll thank yourself later when someone says, “Your repo looks professional.”
-```
