@@ -46,6 +46,8 @@ Originally developed as a Computer Science project to implement Python-MySQL Con
 
 
 ## 🗂️ Project Structure
+## 🗂️ Project Structure
+```text
 pharmacy-management-system/
 ├── src/
 │   ├── main.py               # main application code
@@ -65,6 +67,7 @@ pharmacy-management-system/
 ├── requirements.txt
 ├── LICENSE
 └── .gitignore
+```
 
 
 ## 📸 Screenshots
