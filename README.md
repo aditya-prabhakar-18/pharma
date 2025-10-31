@@ -46,28 +46,6 @@ Originally developed as a Computer Science project to implement Python-MySQL Con
 
 
 ## 🗂️ Project Structure
-## 🗂️ Project Structure
-```text
-pharmacy-management-system/
-├── src/
-│   ├── main.py               # main application code
-│   ├── database_setup.py     # database initialization and table creation
-│   └── utils.py              # helper functions
-│
-├── assets/                   # icons, images, GUI assets
-│   ├── loginbg.png
-│   ├── r11.png
-│   └── sign-emergency.ico
-│
-├── docs/
-│   ├── screenshots/          # screenshots of UI
-│   └── Project_Report.pdf    # original CBSE report
-│
-├── README.md
-├── requirements.txt
-├── LICENSE
-└── .gitignore
-```
 
 
 ## 📸 Screenshots
