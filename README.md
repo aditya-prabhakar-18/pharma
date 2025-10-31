@@ -34,26 +34,53 @@ Originally developed as a Computer Science project to implement Python-MySQL Con
    pip install -r requirements.txt
 
 3. **Configure the database**
+-- Select Database
+mysql> USE pharmacy;
+Database changed;
 
-   * Ensure MySQL Server is running.
-   * Create a database named `pharmacy`.
-   * Update your MySQL credentials (username and password) inside `src/main.py` or `src/database_setup.py` if needed.
+-- Show Tables
+mysql> SHOW TABLES;
++--------------------+
+| Tables_in_pharmacy |
++--------------------+
+| stocks             |
+| users              |
++--------------------+
+2 rows in set (0.00 sec);
+mysql> DESC users;
++---------+--------------+------+-----+---------+----------------+
+| Field   | Type         | Null | Key | Default | Extra          |
++---------+--------------+------+-----+---------+----------------+
+| userID  | int          | NO   | PRI | NULL    | auto_increment |
+| name    | varchar(50)  | YES  |     | NULL    |                |
+| username| varchar(20)  | YES  |     | NULL    |                |
+| password| varchar(20)  | YES  |     | NULL    |                |
++---------+--------------+------+-----+---------+----------------+
+4 rows in set (0.37 sec);
+mysql> SELECT * FROM users;
++--------+------------------+----------+----------+
+| userID | name             | username | password |
++--------+------------------+----------+----------+
+| 1      | Admin            | root     | tiger    |
+| 2      | Aditya Prabhakar | Adi      | tiger    |
++--------+------------------+----------+----------+
+2 rows in set (0.10 sec);
+mysql> DESC stocks;
++---------+--------------+------+-----+---------+-------+
+| Field   | Type         | Null | Key | Default | Extra |
++---------+--------------+------+-----+---------+-------+
+| med_id  | varchar(30)  | NO   | PRI | NULL    |       |
+| med_name| varchar(200) | NO   |     | NULL    |       |
+| amt     | int          | NO   |     | NULL    |       |
+| expiry  | date         | NO   |     | NULL    |       |
+| price   | float        | YES  |     | NULL    |       |
+| lot_no  | int          | NO   |     | NULL    |       |
++---------+--------------+------+-----+---------+-------+
+
 
 4. **Run the application**
 
-   python src/main.py
-
-
-
-## 🗂️ Project Structure
-
-
-## 📸 Screenshots
-
-|                  Login Page                 |                     Dashboard                     |               Billing Interface              |
-| :-----------------------------------------: | :-----------------------------------------------: | :------------------------------------------: |
-| ![Login](docs/screenshots/login_window.png) | ![Dashboard](docs/screenshots/main_interface.png) | ![Billing](docs/screenshots/bill_screen.png) |
-
+   python ph.py
 
 ## 🧠 Learning Outcomes
 
