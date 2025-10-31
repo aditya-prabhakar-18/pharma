@@ -24,16 +24,16 @@ Originally developed as a Computer Science project to implement Python-MySQL Con
 ## ⚙️ Installation & Setup
 1. **Clone this repository**
 
-    git clone https://github.com/adityaprabhakar/pharmacy-management-system.git
-   cd pharmacy-management-system
+install python and other dependencies
 
 
 2. **Install dependencies**
 
-
-   pip install -r requirements.txt
+install mysql-connector for python
 
 3. **Configure the database**
+
+```sql
 -- Select Database
 mysql> USE pharmacy;
 Database changed;
@@ -77,7 +77,7 @@ mysql> DESC stocks;
 | lot_no  | int          | NO   |     | NULL    |       |
 +---------+--------------+------+-----+---------+-------+
 
-
+```
 4. **Run the application**
 
    python ph.py
